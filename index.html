@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito serie y paralelo</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e6f7ff;
+        }
+    </style>
+</head>
+<body>
+<a href="index.html">visitar primer deber</a><br>
+    <a href="tercerDeber.html">visitar tercer deber</a><br>
+    <a href="actividad1Thinkercad.html">visitar Actividad 1</a><br>
+    <a href="actividad2Thinkercad.html">visitar Actividad 2</a><br>
+     <a href="actividad3Thinkercad.html">visitar Actividad 3</a><br>
+    <a href="actividad4Thinkercad.html">visitar Actividad 4</a>
+    <h2 align="center">Ley de Ohm</h2>
+
+    <h2 align="center">TÍTULO DE LA PRÁCTICA<br>
+"Circuito serie y paralelo"</h2>
+
+<h2>Introducción</h2>
+<p>La Ley de Ohm es una de las leyes fundamentales de la electricidad y establece la relación entre el voltaje, la corriente y la resistencia en un circuito eléctrico. Fue formulada por el físico alemán Georg Simon Ohm en 1827. Según esta ley, la corriente que circula por un conductor es directamente proporcional al voltaje aplicado e inversamente proporcional a la resistencia del circuito. Matemáticamente se expresa como V = I × R, donde V es el voltaje, I la corriente y R la resistencia. Esta ley permite analizar y diseñar circuitos eléctricos con precisión. Es ampliamente utilizada en electrónica, ingeniería eléctrica y en la enseñanza de principios básicos de electricidad.
+<h2>OBJETIVOS</h2>
+<p>Objetivo General:<br>
+• Comprender y aplicar los principios de medición de voltaje y corriente en circuitos eléctricos conectados en serie y paralelo, utilizando instrumentos adecuados para analizar el comportamiento eléctrico de cada configuración.<br>
+Objetivos Específicos:<br>
+• Identificar las características principales de los circuitos en serie y paralelo, diferenciando el comportamiento del voltaje y la corriente en cada tipo de conexión.<br>
+• Utilizar correctamente el multímetro para medir el voltaje y la corriente en distintos puntos de un circuito en serie y paralelo<br>
+• Comparar los resultados obtenidos experimentalmente con los valores teóricos, aplicando la Ley de Ohm y las reglas de división de voltaje y corriente.</p>
+
+<h3>MARCO TEÓRICO</h3>
+<p><strong>Conceptos importantes</strong></p>
+<ul>
+  <li><strong>Circuito serie:</strong> Es una conexión donde los componentes eléctricos están uno tras otro y la corriente circula por un solo camino.    </li>
+  <li><strong>Circuito paralelo:</strong> Es una conexión donde los componentes están en ramas separadas y la corriente se divide entre ellas.     </li>
+  <li><strong>Voltaje:</strong>   Es la diferencia de potencial eléctrico entre dos puntos; se mide en voltios (V).        </li>
+  <li><strong>Corriente:</strong>   Es el flujo de electrones a través de un conductor; se mide en amperios (A).        </li>
+  <li><strong>Multímetro</strong>     Es un instrumento que mide voltaje, corriente y resistencia en un circuito eléctrico.      </li>
+  <li><strong>Resistencia:</strong>      Es la oposición al paso de la corriente en un material; se mide en ohmios (Ω).     </li>
+</ul>
+<img src="https://i.postimg.cc/3RLPvFJt/ohm.png" width="800">
+
+<h3>Tabla comparativa entre circuito serie y paralelo</h3>
+
+      <table>
+        <tr><th>Característica</th><th>Circuito serie</th><th>Circuito paralelo</th></tr>
+        <tr><td>Camino de la corriente</td><td>Solo uno</td><td>Múltiples caminos</td></tr>
+        <tr><td>Voltaje</td><td>Se divide entre los componentes</td><td>Es igual en todos los componentes</td></tr>
+        <tr><td>Corriente</td><td>Es igual en todos los componentes</td><td>Se divide según la resistencia de cada rama</td></tr>
+        <tr><td>Si un elemento falla</td><td>Todo el circuito deja de funcionar</td><td>El resto del circuito sigue funcionando</td></tr>
+        <tr><td>Uso más común</td><td>Luces navideñas antiguas, sensores simples</td><td>Instalaciones eléctricas en casas, electrodomésticos</td></tr>
+        <tr><td>Cálculo de resistencia</td><td>Se suman: R_total = R₁ + R₂ + R₃ + ...</td><td>Se calcula con: 1/R_total = 1/R₁ + 1/R₂ + 1/R₃ + ...</td></tr>
+      </table>
+
+<div class="materiales">
+        <h2>🔧 MATERIALES Y EQUIPO - Práctica de Circuito Serie y Paralelo</h2>
+        <ul>
+            <li>Fuente de alimentación (DC, 5V o 9V)</li>
+            <li>Protoboard (placa de pruebas)</li>
+            <li>Cables de conexión (jumper wires)</li>
+            <li>Resistencias de distintos valores (ej. 220Ω, 330Ω, 1kΩ)</li>
+            <li>LEDs (para visualización del paso de corriente)</li>
+            <li>Multímetro digital (para medir corriente y voltaje)</li>
+            <li>Interruptores o pulsadores (opcional)</li>
+        </ul>
+    </div>
+  <h3>PROCEDIMIENTO</h3>
+ <h1>Medición en Circuitos Serie y Paralelo</h1>
+
+    <div class="serie">
+        <h2> Circuito Serie</h2>
+        <ul>
+            <li><strong>¿Cómo medir voltaje en un circuito serie?</strong><br>
+                Se coloca el multímetro en paralelo con el componente donde se quiere medir el voltaje, conectando las puntas en los extremos del elemento.
+            <img src="https://i.postimg.cc/G23ThG2L/voltaje1.png" width="280">
+            </li>
+            <li><strong>¿Cómo medir corriente en un circuito serie?</strong><br>
+                Se debe abrir el circuito e insertar el multímetro en serie, de modo que la corriente fluya a través del medidor.
+            <img src="https://tecnoapuntes.com/wp-content/uploads/2021/05/Diapositiva30-768x432.jpg" width="350">
+            </li>
+            <li><strong>¿Cómo calcular la resistencia equivalente (Req) en un circuito serie?</strong><br>
+                Se suman directamente todas las resistencias:<br>
+                <code>Req = R₁ + R₂ + R₃ + ... + Rn</code>
+            <img src="https://tecnoapuntes.com/wp-content/uploads/2021/05/Diapositiva12-scaled.jpg" width="350">    
+            </li>
+            <li><strong>¿Cómo calcular la corriente y el voltaje en un circuito serie?</strong><br>
+                <ul>
+                    <li><strong>Corriente (I):</strong> Se usa la Ley de Ohm: <code>I = Vtotal / Req</code></li>
+                    <li><strong>Voltaje en cada resistor (Vn):</strong> <code>Vn = I × Rn</code></li>
+                <img src="https://electronicaonline.net/wp-content/uploads/2019/03/circuito-en-serie-formulas.jpg" width="350">
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="paralelo">
+        <h2> Circuito Paralelo</h2>
+        <ul>
+            <li><strong>¿Cómo medir voltaje en un circuito paralelo?</strong><br>
+                Se mide en paralelo sobre cualquier resistencia, colocando las puntas del multímetro a los extremos del componente; el voltaje será el mismo en todas las ramas.
+            <img src="https://i.ytimg.com/vi/hciV7U4ipxI/mqdefault.jpg" width="350">
+            </li>
+            <li><strong>¿Cómo medir corriente en un circuito paralelo?</strong><br>
+                Se mide en cada rama por separado, abriendo el circuito en la rama deseada y conectando el multímetro en serie con esa conexión.
+            <img src="https://www.researchgate.net/profile/Nelson-Sepulveda-7/publication/369681525/figure/fig4/AS:11431281133502412@1680294182732/Figura-3-a-Circuito-con-amperimetro-conectado-en-serie-para-medir-intensidad-de.jpg" width="350">
+            </li>
+            <li><strong>¿Cómo calcular la resistencia equivalente (Req) en un circuito paralelo?</strong><br>
+                Se aplica la fórmula:<br>
+                <code>1/Req = 1/R₁ + 1/R₂ + 1/R₃ + ... + 1/Rn</code>
+            <img src="https://i.ytimg.com/vi/4M0quxGGucc/mqdefault.jpg" width="350">
+            </li>
+            <li><strong>¿Cómo calcular la corriente y el voltaje en un circuito paralelo?</strong><br>
+                <ul>
+                    <li><strong>Voltaje (V):</strong> Es igual en todas las ramas, igual al voltaje total: <code>Vn = Vtotal</code></li>
+                    <li><strong>Corriente por cada rama (In):</strong> <code>In = V / Rn</code></li>
+                    <li><strong>Corriente total:</strong> <code>Itotal = I₁ + I₂ + I₃ + ... + In</code></li>
+                <img src="https://www.pardell.es/images/om7.png" width="600">
+                </ul>
+            </li>
+        </ul>
+    </div>  
+
+<h3>ANÁLISIS Y DISCUSIÓN</h3>
+  <div class="seccion">
+        <h2> Preguntas y Respuestas sobre Circuitos Serie y Paralelo</h2>
+        <ul>
+            <li>
+                <strong>¿Cuál es la diferencia principal entre un circuito en serie y uno en paralelo?</strong>
+                En un circuito en serie, los componentes están conectados uno tras otro y comparten la misma corriente. En un circuito paralelo, los componentes están en ramas separadas y comparten el mismo voltaje.
+            </li>
+            <li>
+                <strong>¿Qué sucede con la corriente si se abre una rama en un circuito paralelo?</strong>
+                Si se abre una rama, la corriente deja de fluir por esa rama, pero las demás continúan funcionando normalmente ya que tienen caminos independientes.
+            </li>
+            <li>
+                <strong>¿Por qué la corriente es igual en todos los componentes de un circuito en serie?</strong>
+                Porque hay un solo camino para que fluya la corriente, por lo tanto, la misma cantidad de corriente pasa por cada componente.
+            </li>
+            <li>
+                <strong>¿Cómo afecta una resistencia adicional al total de un circuito en paralelo?</strong>
+                Al agregar una resistencia en paralelo, la resistencia total del circuito disminuye, ya que se agregan caminos para que fluya la corriente.
+            </li>
+        </ul>
+    </div>
+
+   
+    <div class="seccion">
+        <h2>📝 Conclusiones de la Práctica</h2>
+        <ul>
+            <li>En los circuitos en serie, la corriente se mantiene constante en todos los elementos, mientras que el voltaje se divide entre ellos.</li>
+            <li>En los circuitos en paralelo, el voltaje es el mismo en todas las ramas, pero la corriente se distribuye según la resistencia.</li>
+            <li>El uso del multímetro es fundamental para comprobar el comportamiento real del circuito frente a los cálculos teóricos.</li>
+            <li>La correcta comprensión de estos conceptos permite aplicar la Ley de Ohm y las reglas de circuitos con mayor confianza en proyectos reales.</li>
+        </ul>
+    </div>
+<h3>ANEXOS</h3>
+    <h2><strong> Capturas de pantalla del simulador</strong> </h2>
+    <h3>Circuito serie</h3>
+<div class="contenedor-imagenes">
+        <figure>
+            <img src="https://i.postimg.cc/MZ0jSw8D/circuitoserie.png"width="600">
+        <figcaption>Figura 1: Medición de corriente y voltaje en circuito serie</figcaption>
+        </figure>
+</div>
+<h3>Circuito paralelo</h3>
+<div class="contenedor-imagenes">
+        <figure>
+            <img src="https://i.postimg.cc/3RSVy6sb/circuitoparalelo.png"width="600">
+        <figcaption>Figura 2: Medición de corriente y voltaje en circuito paralelo</figcaption>
+        </figure>
+</div>
+    <h2><strong> Esquemas de conexión en Tinkercad</strong><a href="https://www.tinkercad.com/things/aMIxFbcRMPC-circuito-serie-y-circuito-paralelo/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard">Dar click aquí</a> </h2>
+  <h3>Esquemático de conexiones de circuito paralelo y serie</h3>
+    <img src="https://i.postimg.cc/tRn8vPrV/circuto.png"width="1000">
+<section>
+  <h2>Simulación en Tinkercad</h2>
+  <p>A continuación se presenta la simulación realizada en Tinkercad</p>
+  <iframe 
+    width="1000" 
+    height="453" 
+    src="https://www.tinkercad.com/embed/aMIxFbcRMPC?editbtn=1"
+    frameborder="0" 
+    marginwidth="0" 
+    marginheight="0" 
+    scrolling="no">
+  </iframe>
+</section>
+</body>
+</html>
