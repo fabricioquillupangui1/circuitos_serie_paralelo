@@ -31,6 +31,12 @@
         tr:hover {
             background-color: #e6f7ff;
         }
+         .serie img {
+        float: left;           /* Alinea la imagen a la izquierda */
+        margin-right: 10px;    /* Espacio entre imagen y texto */
+        margin-bottom: 10px;   /* Espacio inferior */
+        clear: left;           /* Hace que cada imagen empiece en una nueva línea */
+    }
     </style>
 </head>
 <body>
@@ -94,32 +100,36 @@ Objetivos Específicos:<br>
   <h3>PROCEDIMIENTO</h3>
  <h1>Medición en Circuitos Serie y Paralelo</h1>
 
-    <div class="serie">
-        <h2> Circuito Serie</h2>
-        <ul>
-            <li><strong>¿Cómo medir voltaje en un circuito serie?</strong><br>
-                Se coloca el multímetro en paralelo con el componente donde se quiere medir el voltaje, conectando las puntas en los extremos del elemento.<br>
-            <img src="https://i.postimg.cc/G23ThG2L/voltaje1.png" width="280"><br>
-            </li>
-            <li><strong>¿Cómo medir corriente en un circuito serie?</strong><br>
-                Se debe abrir el circuito e insertar el multímetro en serie, de modo que la corriente fluya a través del medidor.<br>
-            <img src="https://tecnoapuntes.com/wp-content/uploads/2021/05/Diapositiva30-768x432.jpg" align="left" width="350"><br>
-           
-           <br> </li>
-            <li><strong>¿Cómo calcular la resistencia equivalente (Req) en un circuito serie?</strong><br>
-                Se suman directamente todas las resistencias:<br>
-                <code>Req = R₁ + R₂ + R₃ + ... + Rn</code><br>
-            <img src="https://tecnoapuntes.com/wp-content/uploads/2021/05/Diapositiva12-scaled.jpg" align="center" width="350"> <br>   
-            </li>
-            <li><strong>¿Cómo calcular la corriente y el voltaje en un circuito serie?</strong><br>
-                <ul>
-                    <li><strong>Corriente (I):</strong> Se usa la Ley de Ohm: <code>I = Vtotal / Req</code></li>
-                    <li><strong>Voltaje en cada resistor (Vn):</strong> <code>Vn = I × Rn</code></li>
-                <img src="https://electronicaonline.net/wp-content/uploads/2019/03/circuito-en-serie-formulas.jpg" width="350">
-                </ul>
-            </li>
-        </ul>
-    </div>
+   <div class="serie">
+    <h2>Circuito Serie</h2>
+    <ul>
+        <li>
+            <strong>¿Cómo medir voltaje en un circuito serie?</strong><br>
+            Se coloca el multímetro en paralelo con el componente donde se quiere medir el voltaje, conectando las puntas en los extremos del elemento.<br>
+            <img src="https://i.postimg.cc/G23ThG2L/voltaje1.png" width="280">
+        </li>
+
+        <li>
+            <strong>¿Cómo medir corriente en un circuito serie?</strong><br>
+            Se debe abrir el circuito e insertar el multímetro en serie, de modo que la corriente fluya a través del medidor.<br>
+            <img src="https://tecnoapuntes.com/wp-content/uploads/2021/05/Diapositiva30-768x432.jpg" width="350">
+        </li>
+
+        <li>
+            <strong>¿Cómo calcular la resistencia equivalente (Req) en un circuito serie?</strong><br>
+            Se suman directamente todas las resistencias:<br>
+            <code>Req = R₁ + R₂ + R₃ + ... + Rn</code><br>
+            <img src="https://tecnoapuntes.com/wp-content/uploads/2021/05/Diapositiva12-scaled.jpg" width="350">
+        </li>
+
+        <li>
+            <strong>¿Cómo calcular la corriente y el voltaje en un circuito serie?</strong><br>
+            <strong>Corriente (I):</strong> Se usa la Ley de Ohm: <code>I = Vtotal / Req</code><br>
+            <strong>Voltaje en cada resistor (Vn):</strong> <code>Vn = I × Rn</code><br>
+            <img src="https://electronicaonline.net/wp-content/uploads/2019/03/circuito-en-serie-formulas.jpg" width="350">
+        </li>
+    </ul>
+</div>
 
     <div class="paralelo">
         <h2> Circuito Paralelo</h2>
@@ -215,6 +225,7 @@ Objetivos Específicos:<br>
 </section>
 </body>
 </html>
+
 
 
 
